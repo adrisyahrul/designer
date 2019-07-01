@@ -1,0 +1,421 @@
+/*global style*/
+@charset "UTF-8";
+@font-face {
+  font-family: 'gothic';
+  src: url("../fonts/GOTHIC.ttf");
+}
+section, footer {
+    cursor: default;
+}
+body, h3, h4 {
+    font-family: gothic;
+}
+.btn {
+    transition: 0.3s;
+}
+.label-search {
+    position: absolute;
+    display: table;
+    right: 11px;
+    bottom: 2px;
+    top: 0;
+    vertical-align: middle;
+    margin: auto;
+}
+.app-form-select {
+    border-radius: 5px 0 0 5px !important;
+}
+.btn-search {
+    z-index: 10;
+    height: 34px;
+}
+.search-box {
+    position: fixed;
+    top: 0;
+    left : 57%;
+    transition: 0.3s;
+    background: #353535;
+    width: 400px;
+    border-radius: 0 0 10px 10px;
+    padding: 0 25px;
+}
+.search-box.search-admin {
+    left: 50%;
+}
+.search-box.search-user {
+    left: calc(45% + 15px);
+}
+.search-box.active-search {
+    top: 71px;
+}
+.btn-search:hover, .btn-search:focus, .btn-search:active, .btn-search:active:focus, .btn-search:active:hover {
+    box-shadow: inset #333 0 0 8px 0;
+}
+.app-form-grouping:focus, .app-form-grouping:hover, .app-form-grouping:active, .app-form-select:focus, .app-form-select:hover, .app-form-select:active {
+    box-shadow: inset #333 0 0 8px 0;
+    border-color: #ddd;
+}
+.caption-form-search {
+    width: 165px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    line-height: 35px;
+}
+.table-user {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+.user-head-table {
+    background: #353535;
+    color: #fff;
+    border: 1px solid #353535;
+}
+.table-user tbody td {
+    border-right: 1px solid #ddd;
+}
+.login-box.reset-password {
+    height: 335px;
+    bottom: 0;
+    top: 0;
+}
+.button-report {
+    text-align: center;
+}
+.button-export {
+    display: inline-block;
+    margin-right: 10px;
+}
+option.current {
+    display: none;
+}
+/*global style*/
+
+/*navbar style*/
+#app-designer-header {
+    margin-top: -21px;
+}
+.navbar-app-designer {
+    background: #353535;
+    height: 71px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.img-logo {
+    height: 40px;
+}
+#app-designer-navbar a {
+    line-height: 40px;
+    color: #fff;
+    transition: 0.3s;
+}
+#app-designer-navbar a:hover {
+    background: #333;
+    box-shadow: inset #000 0 0 15px 0px;
+    height: 69px;
+}
+.error-box {
+    position: absolute;
+    height: 106px;
+    width: 463px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+/*navbar style*/
+
+/*login style*/
+#landing-login {
+    margin-top: 100px;
+}
+.login-box {
+    position: absolute;
+    width: 260px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.form-login {
+    margin-bottom: 15px;
+    height: 40px;
+    font-size: 16px;
+    font-family: gothic;
+}
+.login-box p {
+    margin-bottom: 35px;
+}
+.btn-app-dsg {
+    background: #353535;
+    transition: 0.3s;
+    color: #fff;
+    width: 100%;
+    line-height: 25px;
+    height: 40px;
+}
+.btn-app-dsg:hover {
+    background: #333;
+    box-shadow: inset #000 0 0 15px 0px;
+    color: #fff;
+}
+#footer-login-page {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #353535;
+    color: #fff;
+    line-height: 20px;
+    font-family: gothic;
+    font-size: 12px;
+}
+.login-box.register-box {
+    height: 402px;
+    top: 0;
+    bottom: 0;
+}
+#footer-login-page p {
+    margin: 10px 0;
+}
+/*login style*/
+
+/*data-show*/
+#data-show-all-user {
+    margin-top: 100px;
+    min-height: calc(75vh - 8px);
+}
+#body-database {
+    margin-top: 100px;
+    min-height: calc(75vh - 7px);
+}
+#body-database-page {
+    margin-top: 80px;
+    min-height: calc(75vh - 7px);
+}
+.title-page {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+.table-ecn {
+    text-align: center;
+    font-family: gothic;
+}
+.table-ecn>thead {
+    background: #353535;
+    color: #fff;
+}
+.table-ecn>thead>tr>td, .table-ecn>thead>tr>th {
+    padding: 10px;
+    line-height: 1;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+.table-ecn>tbody>tr>td, .table-ecn>tbody>tr>th, .table-ecn>tfoot>tr>td, .table-ecn>tfoot>tr>th {
+    padding: 10px;
+    line-height: 1;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+}
+.table-ecn>tbody>tr>td:first-child {
+    border-left: 1px solid #ddd;
+}
+.btn-remove {
+    background: #b90000;
+    color: #fff;
+}
+.btn-remove:hover {
+    color: #fff;
+    box-shadow: inset #333 0 0 8px 0px;
+    background: #9e0000;
+}
+.btn-remove.superuser {
+    display: none;
+}
+.btn-edit {
+    background: #ccc;
+    color: #333;
+}
+.btn-edit:hover {
+    box-shadow: inset #333 0 0 8px 0px;
+    color: #333;
+}
+.page-navigation {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.btn-page {
+    background: #ccc;
+    color: #333;
+    line-height: 15px;
+    height: 28px;
+    margin: 5px;
+    font-weight: bold;
+}
+.btn-page:hover {
+    box-shadow: inset #333 0 0 7px 0;
+}
+.btn-numbact {
+    background: #4a4a4a;
+    color: #fff;
+}
+.btn-numbact:hover {
+    color: #fff;
+    box-shadow: none;
+}
+.app-input-group {
+    margin-bottom: 20px;
+    float: left;
+    font-family: gothic;
+    width: 40%;
+}
+.app-input-grouping {
+    display: inline-flex;
+}
+.app-btn-grouping {
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+}
+.app-form-grouping {
+    border-left: 0;
+}
+.app-form-select-right {
+    border-left: 0;
+}
+.app-input-group.search {
+    float: right;
+    margin-top: 15px;
+    width: 350px;
+}
+.btn-month {
+    width: 16.333%;
+    float: left;
+    margin-left: 0.333%;
+    padding: 7px 0;
+    margin-bottom: 0.5%;
+}
+.btn-month:last-child {
+    margin-right: 0;
+}
+.select-years {
+    width: 20%;
+    float: left;
+}
+.app-form-select-years {
+    height: 77px;
+    font-weight: bold;
+    font-size: 33px;
+    padding-left: 30%;
+}
+.group-button-month {
+    float: left;
+    width: 80%;
+}
+.jv-search {
+    cursor: pointer;
+}
+.nodata {
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+/*data-show*/
+
+/*data-record*/
+#form-ecn input, #form-edit input, #form-ecn select, #form-edit select {
+    margin-bottom: 15px;
+}
+.text-center .btn-success {
+    margin: 0 !important;
+}
+/*data-record*/
+#footer p {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    font-family: gothic;
+    font-size: 12px;
+    margin: 0;
+}
+#form-user {
+    width: 300px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: auto;
+}
+#form-user .form-control {
+    margin-bottom: 20px;
+}
+#form-user label {
+    float: left;
+}
+.table-remove {
+    position: static;
+    top: 0;
+}
+.button-control-remove {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-add-user {
+    position: absolute;
+    top: 100px;
+    left: calc(30% + 0px);
+    display: block;
+    color: #fff;
+    background: #353535;
+    padding: 10px;
+    width: 42px;
+}
+.btn-add-user:hover {
+    box-shadow: inset #333 0 0 8px 0;
+    background: transparent;
+    border: 1px solid #353535;
+}
+.btn-add-user.at-right {
+    left: calc(65% + 26px);
+}
+#form-user .fa-circle {
+    float: left;
+}
+.match, .nmatch {
+    float: left;
+    line-height: 13px;
+    margin-left: 10px;
+}
+.green {
+    color: green;
+    display: block !important;
+}
+.red {
+    color: red;
+    display: block !important;
+}
+.validation-pass {
+    position: absolute;
+    left: 310px;
+    top: 192px;
+    width: 100%;
+    display: none;
+}
+.table-print td {
+    border: 1px solid #333 !important;
+}
